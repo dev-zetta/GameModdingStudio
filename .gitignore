@@ -1,0 +1,71 @@
+# .gitignore for Delphi / Embarcadero RAD Studio projects
+# Ignores build artifacts, IDE-local files, temp files, and common editor/OS junk
+# Adjust patterns below if you need to track any generated files (e.g. .res)
+
+### Delphi / FreePascal build artifacts and compiled units
+*.dcu
+*.dcp
+*.bpl
+*.bpi
+*.tds
+*.ppu
+*.o
+*.obj
+*.lib
+*.a
+
+### Executables, maps and debug symbols
+*.exe
+*.dll
+*.map
+*.dbg
+*.tds
+
+### Project/user/IDE local files
+*.dproj.local
+*.dproj.user
+*.local
+*.identcache
+*.dsk
+*.cfg
+
+### Generated package/build folders
+/bin/
+/obj/
+/Debug/
+/Release/
+
+### Editor / OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
+*.tmp
+*.cache
+
+### Backup and temp files
+*~
+*.~*
+*.bak
+*.orig
+
+### History and backup directories (adjust if you want to keep these)
+__history/
+Temp/
+
+### Ignore project backup folders that start with '#'
+\#Backup/
+\#Old/
+\#Release/
+\#Tools/
+
+### IDE / Editor folders
+.vscode/
+.idea/
+
+### Misc
+*.ipr
+*.iws
+
+# End of .gitignore
+gamodstudio_v0.1.4.zip

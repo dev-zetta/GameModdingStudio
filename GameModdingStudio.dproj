@@ -1,0 +1,195 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d9701983-9572-4a06-9f78-4d157a9a5ded}</ProjectGuid>
+    <MainSource>GameModdingStudio.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>GameModdingStudio.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_IncludePath>
+    <DCC_Define>DEBUG;RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_UnitSearchPath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\units;$(BDS)\vcl;$(BDS)\rtl;$(BDS)\db;$(BDS)\app\ui\res;$(BDS)\app\ed\res;$(BDS)\app\design;$(BDS)\qt;$(BDS)\clx</DCC_IncludePath>
+    <DCC_Define>DEBUG;DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">GameModdingStudio.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="GameModdingStudio.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="Forms\About.pas">
+      <Form>AboutBox</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\AlphaScan.pas">
+      <Form>AlphaScanForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\AsciiEditor.pas">
+      <Form>AsciiEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\DataErase.pas">
+      <Form>DataEraseForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\DupeCheck.pas">
+      <Form>DupeCheckForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\FileRip.pas">
+      <Form>FileRipForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\Main.pas">
+      <Form>MainForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\MPEGTool.pas">
+      <Form>MPEGToolForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\PluginInfo.pas">
+      <Form>PluginInfoForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\SplashScreen.pas">
+      <Form>SplashForm</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\TextureConverter.pas">
+      <Form>TextureConverterForm</Form>
+    </DCCReference>
+    <DCCReference Include="Sources\FastFileStream.pas" />
+    <DCCReference Include="Sources\Imaging\Imaging.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingBitmap.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingCanvases.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingClasses.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingColors.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingComponents.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingDds.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingExport.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingFormats.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingGif.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingIO.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingJpeg.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingNetworkGraphics.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingPortableMaps.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingTarga.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingTypes.pas" />
+    <DCCReference Include="Sources\Imaging\ImagingUtility.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcapimin.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcapistd.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjccoefct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjccolor.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcdctmgr.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjchuff.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcinit.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcmainct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcmarker.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcmaster.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcomapi.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcparam.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcphuff.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcprepct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjcsample.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdapimin.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdapistd.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdcoefct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdcolor.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjddctmgr.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdeferr.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdhuff.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdinput.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdmainct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdmarker.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdmaster.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdmerge.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdphuff.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdpostct.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjdsample.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjerror.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjfdctflt.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjfdctfst.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjfdctint.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjidctasm.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjidctflt.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjidctfst.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjidctint.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjidctred.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjinclude.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjmemmgr.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjmemnobs.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjmorecfg.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjpeglib.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjquant1.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjquant2.pas" />
+    <DCCReference Include="Sources\Imaging\JpegLib\imjutils.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\dzlib.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\imadler.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\iminfblock.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\iminfcodes.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\iminffast.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\iminftrees.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\iminfutil.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\impaszlib.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\imtrees.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\imzdeflate.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\imzinflate.pas" />
+    <DCCReference Include="Sources\Imaging\ZLib\imzutil.pas" />
+    <DCCReference Include="Sources\LTWaterEffect.pas" />
+    <DCCReference Include="Sources\MultiGaugeX.pas" />
+    <DCCReference Include="Sources\pelib.pas" />
+    <DCCReference Include="Sources\ProgressBarEx.pas" />
+    <DCCReference Include="Sources\VASTLIB\VastFile.pas" />
+    <DCCReference Include="Sources\VASTLIB\VastMemory.pas" />
+    <DCCReference Include="Sources\VASTLIB\VastUtils.pas" />
+    <DCCReference Include="Units\AlphaScanner.pas" />
+    <DCCReference Include="Units\AsmFun.pas" />
+    <DCCReference Include="Units\BlankFiles.pas" />
+    <DCCReference Include="Units\CRCFunc.pas" />
+    <DCCReference Include="Units\DupeChecker.pas" />
+    <DCCReference Include="Units\ExternalLoader.pas" />
+    <DCCReference Include="Units\FastDDSLoader.pas" />
+    <DCCReference Include="Units\FastPSDLoader.pas" />
+    <DCCReference Include="Units\FileRipper.pas" />
+    <DCCReference Include="Units\FileRipperDescriptions.pas" />
+    <DCCReference Include="Units\FileRipperExtensions.pas" />
+    <DCCReference Include="Units\FileRipperFormats.pas" />
+    <DCCReference Include="Units\FileRipperHeaders.pas" />
+    <DCCReference Include="Units\FileRipperMarkers.pas" />
+    <DCCReference Include="Units\FileRipperScanner.pas" />
+    <DCCReference Include="Units\FileRipperSections.pas" />
+    <DCCReference Include="Units\FileRipperShared.pas" />
+    <DCCReference Include="Units\GlobalRefresh.pas" />
+    <DCCReference Include="Units\MPEGScanner.pas" />
+    <DCCReference Include="Units\PluginLoader.pas" />
+    <DCCReference Include="Units\ProcTimer.pas" />
+    <DCCReference Include="Units\SharedFunc.pas" />
+    <DCCReference Include="Units\SharedHeaders.pas" />
+    <DCCReference Include="Units\SharedTypes.pas" />
+    <DCCReference Include="Units\SystemInfo.pas" />
+    <DCCReference Include="Units\TexConverter.pas" />
+    <DCCReference Include="Units\TextConverter.pas" />
+    <DCCReference Include="Units\TextuConverter.pas" />
+    <DCCReference Include="Units\TexturConverter.pas" />
+    <DCCReference Include="Units\TextureConverter.pas" />
+    <DCCReference Include="Units\WAVPlayer.pas" />
+  </ItemGroup>
+</Project>

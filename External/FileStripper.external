@@ -1,0 +1,7 @@
+[Main]
+Executable = External\FileStripper\FileStripper.exe
+CommandLine =
+Version = 1.0
+Author = Crypton
+Description = Tool for splitting files
+MenuCaption = FileStripper

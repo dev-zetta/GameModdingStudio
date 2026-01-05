@@ -1,0 +1,25 @@
+object SplashForm: TSplashForm
+  Left = 0
+  Top = 0
+  AlphaBlendValue = 235
+  BorderStyle = bsNone
+  Caption = 'SplashForm'
+  ClientHeight = 240
+  ClientWidth = 347
+  Color = clBtnFace
+  TransparentColor = True
+  TransparentColorValue = clFuchsia
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+end
