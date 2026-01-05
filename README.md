@@ -30,17 +30,46 @@ Game Modding Studio (originally a long-term personal project) provides a collect
 
 ## Supported formats
 
-Below is a concise table of commonly supported formats and notable caveats. This project evolved over many years and the list below highlights the main formats supported by the bundled tools; consult the original `ReadMe.txt` for a fuller historical list of added/rare formats.
+The supported-format list below is derived from the project's authoritative source file `Units/FileRipperDescriptions.pas` and historical notes in the original `ReadMe.txt`.
 
-| Format examples | Type | Notes |
-|---|---|---|
-| PSD, TGA, PNG, JPEG (JFIF), BMP, GIF | Image | Texture conversion and loaders; TGA: only the uncompressed non-palette variation is considered safe for automatic detection |
-| MP3, WAV, AIFF, APE, M4A, FLAC, OGG | Audio | MP3 fully supported (including ID3); other formats supported to varying degrees depending on container and metadata |
-| MP4, MOV, AVI, FLV, 3GP, 3G2, NSV, PVA | Video / containers | Archive/stream scanning and extraction; MP4/MOV marker support may be partial in some cases |
-| ZIP, 7z, CAB, XNB, WAD, 4XM, PSMF | Archives / containers | Archive scanning and file extraction supported for many common container formats |
-| 3DS, MDL7, GR2, other 3D models | 3D models | Read-only support for several model formats; behaviour may vary by format version |
-| Zlib / compressed data | Compression | Zlib support included for compressed streams and file blocks |
-| SWF, EXE, DLL, TTF, XMV, and many others | Misc | Many additional formats were added across versions; see historical changelog or `ReadMe.txt` for exhaustive lists and notes |
+**Total supported formats (unique entries, historical): 93**
+
+### Images & textures
+PSD, TGA (uncompressed non-palette), PNG, APNG, JPEG (JFIF), BMP, GIF, RAF, RAS, DPX (v1/v4)
+
+### Audio
+MP3, WAV, AIFF, APE, M4A, OGG, 8SVX, TTA, VQF, OFR, LA, LPAC, XWMA, WVPK
+
+### Video & containers
+MP4, MOV, AVI, FLV, 3GP, 3G2, NSV, PVA, XMV, PSMF, 4XM, FLI, FLC, FLX, THP, FILM, AVS, R3D
+
+### Archives & packages
+ZIP, 7z, CAB, XNB, WAD2, WVPK, XBG, XPR0, XPR2
+
+### 3D & model formats
+3DS, MDL7, GR2, LWO2, XBG v2..v7
+
+### Game/resource & proprietary formats
+BRES, REFT, RFNA, RFNT, RSAR, RSTM, DMSG, DMSC, RMF, SND, SDAT, SSEQ, SSAR, SWAR, SBNK, NCER, NANR, NCLR, NARC
+
+### Fonts, runtime & misc
+TTF, SWF, EXE, DLL, LPAC
+
+### Compression / streams
+Zlib
+
+### Known but unsupported / hard-to-implement (examples)
+PCX, TIF, ACM, AAC, FLAC, AMF, PPM/PGM/PBM/PAM/PNM, ACE, LZH, speex (OGG), GXF, AA (Audible), MXF, RPL, BFI, DXA, SHR, SANM, SEQ, BLEND, 3DV/3VN/3DM/GRS/X, UFO, SRF, AMR, AMV, MPC
+
+> Note: The list documents formats detected, added or referenced across project history; some formats have partial support or were later marked as N/A in original notes. For exact, per-format caveats and dates when formats were added, see `CHANGELOG.md` and `ReadMe.txt`.
+
+### Known but unsupported / hard-to-implement formats
+
+The original `ReadMe.txt` also contains a list of formats that were known but considered unsupported or hard to implement at the time (examples include):
+
+- PCX, TIF, ACM, AAC, FLAC, AMF, PPM/PGM/PBM/PAM/PNM (portable formats), ACE, LZH, speex (OGG), GXF, AA (Audible), MXF, RPL, BFI, DXA, SHR (SheerVideo), SANM, SEQ, BLEND, 3DV/3VN/3DM/GRS/X (3D ASCII formats), UFO, SRF, AMR, AMV, MPC
+
+If you can provide samples or details for any of the above, contributions are very welcome — see `CONTRIBUTING` and open an issue with sample files.
 
 
 ## Legacy notes (imported from original ReadMe.txt)
